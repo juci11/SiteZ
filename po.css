@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    background: url(white\ horse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bAnime 11s linear infinite;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.headers .logo h1 {
+    font-family: "Arial";
+    color: rgb(255,255,255);
+}
+
+.headers .lists ul {
+    list-style: none;
+}
+
+.headers .lists ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.headers .lists ul li a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+}
+
+.description span {
+    color: orangered;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.description h1 {
+    font-size: 55px;
+}
+
+.description p {
+    max-width: 100%;
+    width: 500px;
+    line-height: 1.5;
+}
+
+.image_slider {
+    width: 430px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-30%);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.image_container {
+    display: flex;
+    gap: 20px;
+    animation: imganime 11s linear infinite;
+    transition: all 4s linear;
+}
+
+.image_container img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+@keyframes imganime {
+    0% {
+        transform: translateX(0);
+    }5% {
+        transform: translateX(0);
+    }10% {
+        transform: translateX(0);
+    }15% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-220px);
+    }25% {
+        transform: translateX(-220px);
+    }30% {
+        transform: translateX(-220px);
+    }35% {
+        transform: translateX(-220px);
+    }45% {
+        transform: translateX(-220px);
+    }
+    50% {
+        transform: translateX(-440px);
+    }55% {
+        transform: translateX(-440px);
+    }60% {
+        transform: translateX(-440px);
+    }65% {
+        transform: translateX(-440px);
+    }70% {
+        transform: translateX(-440px);
+    }
+    75% {
+        transform: translateX(-650px);
+    }80% {
+        transform: translateX(-650px);
+    }85% {
+        transform: translateX(-650px);
+    }90% {
+        transform: translateX(-650px);
+    }95% {
+        transform: translateX(-650px);
+    }100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bAnime {
+    0% {
+        background-image: url(Pr.jpg);
+    }5% {
+        background-image: url(Pr.jpg);
+    }10% {
+        background-image: url(Pr.jpg);
+    }15% {
+        background-image: url(Pr.jpg);
+    }
+    20% {
+        background-image: url(Pr1.jpg);
+    }25% {
+        background-image: url(Pr1.jpg);
+    }30% {
+        background-image: url(Pr1.jpg);
+    }35% {
+        background-image: url(Pr1.jpg);
+    }45% {
+        background-image: url(Pr1.jpg);
+    }
+    50% {
+        background-image: url(Pr2.jpg);
+    }55% {
+        background-image: url(Pr2.jpg);
+    }60% {
+        background-image: url(Pr2.jpg);
+    }65% {
+        background-image: url(Pr2.jpg);
+    }70% {
+        background-image: url(Pr2.jpg);
+    }
+    75% {
+        background-image: url(Pr3.jpg);
+    }80% {
+        background-image: url(Pr3.jpg);
+    }85% {
+        background-image: url(Pr3.jpg);
+    }90% {
+        background-image: url(Pr3.jpg);
+    }95% {
+        background-image: url(Pr3.jpg);
+    }100% {
+        background-image: url(Pr3.jpg);
+    }
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.button-solar {
+    background: linear-gradient(	#836FFF, 	#6959CD, 	#6A5ACD); /* Orange color */
+}
+
+.button-filmes {
+    background: linear-gradient(	#00BFFF, 	#1E90FF, #87CEFA); /* Blue color */
+}
+.button-home {
+  background: linear-gradient(	#FF1493, #FF69B4, #C71585);
+  }
